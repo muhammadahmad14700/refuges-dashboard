@@ -1,0 +1,65 @@
+import { combineReducers } from "redux";
+import {
+  AddNewRefugeReducer,
+  AllRefugesReducer,
+  AllAssignedRefugesReducer,
+  AllUnAssignedRefugesReducer,
+  AddNewPipReducer,
+  AllPipplanReducer,
+  BredeintakeReducer,
+  UpdatePipReducer,
+  AddNewRulesReducer,
+  AddNewExtraAttributeReducer,
+  PipprogressReducer,
+  ExtraattributesReducer,
+  UpdatePipprogressReducer,
+  UpdateExtraAttributeReducer,
+  DeleteExtraAttributeReducer,
+  AddNewRemarkReducer,
+  getRemarksReducer,
+  deleteRemarkReducer,
+  PipprogressStatsReducer,
+  AllPipplanVersionsReducer,
+  AddNewEventReducer,
+  AllAgendasReducer,
+  deleteEventReducer,
+  editEventReducer,
+  AllNotificationsReducer
+} from "./municipality.reducers";
+import { AllAssignedMunicipalitiesReducer, AllMunicipalitiesReducer, AllMunicipalitiesWithoutRules } from "../../../home/store/reducers/home.reducers";
+import { getMunicipalitySummaryReducer } from "../../../create_user/store/reducers/createUser.reducers";
+import { chatHistoryReducer } from "../../../userapp/chat/store/reducers/chat.reducers"
+const reducer = combineReducers({
+  AddNewRefugeReducer,
+  AddNewRulesReducer,
+  AddNewExtraAttributeReducer,
+  AllAssignedRefugesReducer,
+  AllUnAssignedRefugesReducer,
+  AllRefugesReducer,
+  AddNewPipReducer,
+  AllPipplanReducer,
+  BredeintakeReducer,
+  UpdatePipReducer,
+  AllAssignedMunicipalitiesReducer,
+  AllMunicipalitiesReducer,
+  PipprogressReducer,
+  ExtraattributesReducer,
+  UpdateExtraAttributeReducer,
+  UpdatePipprogressReducer,
+  DeleteExtraAttributeReducer,
+  AllMunicipalitiesWithoutRules,
+  AddNewRemarkReducer,
+  getRemarksReducer,
+  deleteRemarkReducer,
+  PipprogressStatsReducer,
+  AllPipplanVersionsReducer,
+  AddNewEventReducer,
+  AllAgendasReducer,
+  deleteEventReducer,
+  editEventReducer,
+  getMunicipalitySummaryReducer,
+  AllNotificationsReducer,
+  chatHistoryReducer
+});
+
+export default reducer;
